@@ -8,8 +8,10 @@
     <link href="style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="box">
+  <body class="bg-black transition duration-1000 ease-in">
+    <div class="container mx-auto flex flex-col items-center justify-between h-[100vh]">
+
+    <div class="box h-[300px] w-[200px] mt-[200px] relative">
       <h1 class="text-8xl font-extrabold leading-none tracking-tight text-yellow-600">
         We need you
       </h1>
@@ -23,7 +25,7 @@
       <span style="--i: 8"><img src="assets/shogo.jpeg" /></span>
     </div>
 
-    <div class="bottom-text text-lg">
+    <div class="text-lg p-2 text-center text-balance" style="text-wrap: balance">
       <p>
         Tu as été choisis parmis les meilleurs pour reformer la line-up CS des Riflons.
         Félicitations.
@@ -39,6 +41,7 @@
       <br /><a href="https://discord.gg/YkEFugX3" id="disc" target="_blank" class="text-2xl"
         >Discord</a
       >
+    </div>
     </div>
   </body>
   <script>
