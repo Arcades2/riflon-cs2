@@ -5,9 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Riflon CS2</title>
+    <link href="style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1 class="text-3xl bold underline">We need you !</h1>
+    <div class="box">
+      <h1 class="text-8xl font-extrabold leading-none tracking-tight text-yellow-600">
+        We need you
+      </h1>
+      <span style="--i: 1"><img src="assets/aldo.jpg" /></span>
+      <span style="--i: 2"><img src="assets/do.jpg" /></span>
+      <span style="--i: 3"><img src="assets/fanch.jpg" /></span>
+      <span style="--i: 4"><img src="assets/jerem.jpg" /></span>
+      <span style="--i: 5"><img src="assets/louli.jpg" /></span>
+      <span style="--i: 6"><img src="assets/momo.jpeg" /></span>
+      <span style="--i: 7"><img src="assets/pasc.jpg" /></span>
+      <span style="--i: 8"><img src="assets/shogo.jpeg" /></span>
+    </div>
+
+    <div class="bottom-text text-lg">
+      <p>
+        Tu as été choisis parmis les meilleurs pour reformer la line-up CS des Riflons.
+        Félicitations.
+      </p>
+
+      <p>Je t'invite a rejoindre le groupe steam et le discord.</p>
+
+      <p>RDV Jeudi 20H sur le discord pour la première pracc.</p>
+
+      <a href="https://steamcommunity.com/groups/riflonboeuf" target="_blank" class="text-2xl"
+        >Rejoins ce groupe</a
+      >
+      <br /><a href="https://discord.gg/YkEFugX3" id="disc" target="_blank" class="text-2xl"
+        >Discord</a
+      >
+    </div>
   </body>
+  <script>
+    const flashbang = new Audio(
+      "https://www.myinstants.com/media/sounds/throwing-flashbang-sound-effect-cs-go.mp3"
+    );
+
+    window.addEventListener("click", function () {
+      flashbang.currentTime = 0;
+      flashbang.play();
+
+      document.body.style.backgroundColor = "white";
+
+      setTimeout(function () {
+        document.body.style.backgroundColor = "";
+      }, 1000);
+    });
+  </script>
 </html>
